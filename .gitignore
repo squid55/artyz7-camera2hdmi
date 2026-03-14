@@ -1,0 +1,38 @@
+# Vivado local state
+.Xil/
+*.jou
+*.log
+*.str
+*.backup.jou
+*.backup.log
+
+# Vivado generated project outputs
+*.cache/
+*.gen/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+
+# Imported/generated synthesis artifacts
+*.dcp
+
+# Vitis workspace state and build outputs
+vitis_workspace/.lock
+vitis_workspace/.peers.ini
+vitis_workspace/.theia/
+vitis_workspace/.vitisWorkspace.json
+vitis_workspace/logs/
+vitis_workspace/**/_ide/
+vitis_workspace/**/build/
+vitis_workspace/**/compile_commands.json
+vitis_workspace/**/*.elf
+vitis_workspace/**/*.elf.size
+vitis_workspace/**/vitis-comp.json
+vitis_workspace/my_platform/
+!vitis_workspace/my_platform/.gitignore
+vitis_workspace/camera_app/src/.clangd
+
+# Editor temp files
+*.tmp
+*.bak
