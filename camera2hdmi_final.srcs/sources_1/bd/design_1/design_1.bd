@@ -24,9 +24,9 @@
       "camera_configure_0": "",
       "ov7670_axi_stream_ca_0": "",
       "rgb2dvi_0": "",
-      "system_ila_0": "",
       "rst_pclk": "",
-      "rst_25M": ""
+      "rst_25M": "",
+      "ila_0": ""
     },
     "interface_ports": {
       "DDR_0": {
@@ -309,6 +309,9 @@
         "xci_path": "ip/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1.xci",
         "inst_hier_path": "clk_wiz_0",
         "parameters": {
+          "CLKIN1_JITTER_PS": {
+            "value": "50.0"
+          },
           "CLKOUT1_JITTER": {
             "value": "112.316"
           },
@@ -347,6 +350,9 @@
           },
           "MMCM_CLKIN1_PERIOD": {
             "value": "5.000"
+          },
+          "MMCM_CLKIN2_PERIOD": {
+            "value": "10.0"
           },
           "MMCM_CLKOUT0_DIVIDE_F": {
             "value": "10.000"
@@ -765,6 +771,24 @@
           "PCW_FPGA_FCLK0_ENABLE": {
             "value": "1"
           },
+          "PCW_GP0_EN_MODIFIABLE_TXN": {
+            "value": "1"
+          },
+          "PCW_GP0_NUM_READ_THREADS": {
+            "value": "4"
+          },
+          "PCW_GP0_NUM_WRITE_THREADS": {
+            "value": "4"
+          },
+          "PCW_GP1_EN_MODIFIABLE_TXN": {
+            "value": "1"
+          },
+          "PCW_GP1_NUM_READ_THREADS": {
+            "value": "4"
+          },
+          "PCW_GP1_NUM_WRITE_THREADS": {
+            "value": "4"
+          },
           "PCW_GPIO_EMIO_GPIO_ENABLE": {
             "value": "0"
           },
@@ -788,9 +812,6 @@
           },
           "PCW_INCLUDE_ACP_TRANS_CHECK": {
             "value": "0"
-          },
-          "PCW_IRQ_F2P_MODE": {
-            "value": "DIRECT"
           },
           "PCW_MIO_PRIMITIVE": {
             "value": "54"
@@ -1043,15 +1064,6 @@
           },
           "PCW_S_AXI_HP0_ID_WIDTH": {
             "value": "6"
-          },
-          "PCW_S_AXI_HP1_DATA_WIDTH": {
-            "value": "64"
-          },
-          "PCW_S_AXI_HP2_DATA_WIDTH": {
-            "value": "64"
-          },
-          "PCW_S_AXI_HP3_DATA_WIDTH": {
-            "value": "64"
           },
           "PCW_TPIU_PERIPHERAL_CLKSRC": {
             "value": "External"
@@ -1914,40 +1926,6 @@
           }
         }
       },
-      "system_ila_0": {
-        "vlnv": "xilinx.com:ip:system_ila:1.1",
-        "ip_revision": "15",
-        "xci_name": "design_1_system_ila_0_0",
-        "xci_path": "ip/design_1_system_ila_0_0/design_1_system_ila_0_0.xci",
-        "inst_hier_path": "system_ila_0",
-        "parameters": {
-          "C_MON_TYPE": {
-            "value": "INTERFACE"
-          },
-          "C_NUM_MONITOR_SLOTS": {
-            "value": "1"
-          },
-          "C_SLOT_0_APC_EN": {
-            "value": "0"
-          },
-          "C_SLOT_0_AXI_DATA_SEL": {
-            "value": "1"
-          },
-          "C_SLOT_0_AXI_TRIG_SEL": {
-            "value": "1"
-          },
-          "C_SLOT_0_INTF_TYPE": {
-            "value": "xilinx.com:interface:axis_rtl:1.0"
-          }
-        },
-        "interface_ports": {
-          "SLOT_0_AXIS": {
-            "mode": "Monitor",
-            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
-            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
-          }
-        }
-      },
       "rst_pclk": {
         "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
         "ip_revision": "14",
@@ -1961,6 +1939,21 @@
         "xci_name": "design_1_proc_sys_reset_1_0",
         "xci_path": "ip/design_1_proc_sys_reset_1_0/design_1_proc_sys_reset_1_0.xci",
         "inst_hier_path": "rst_25M"
+      },
+      "ila_0": {
+        "vlnv": "xilinx.com:ip:ila:6.2",
+        "ip_revision": "14",
+        "xci_name": "design_1_ila_0_1",
+        "xci_path": "ip/design_1_ila_0_1/design_1_ila_0_1.xci",
+        "inst_hier_path": "ila_0",
+        "parameters": {
+          "C_MONITOR_TYPE": {
+            "value": "Native"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "4"
+          }
+        }
       }
     },
     "interface_nets": {
@@ -1985,8 +1978,7 @@
       "ov7670_axi_stream_ca_0_m_axis": {
         "interface_ports": [
           "axi_vdma_0/S_AXIS_S2MM",
-          "ov7670_axi_stream_ca_0/m_axis",
-          "system_ila_0/SLOT_0_AXIS"
+          "ov7670_axi_stream_ca_0/m_axis"
         ],
         "hdl_attributes": {
           "DEBUG": {
@@ -2050,7 +2042,8 @@
       "camera_configure_0_done": {
         "ports": [
           "camera_configure_0/done",
-          "done_0"
+          "done_0",
+          "ila_0/probe1"
         ]
       },
       "camera_configure_0_sioc": {
@@ -2071,23 +2064,25 @@
           "axi_vdma_0/s_axi_lite_aclk",
           "axi_vdma_0/m_axi_mm2s_aclk",
           "axi_vdma_0/m_axi_s2mm_aclk",
-          "smartconnect_0/aclk",
-          "processing_system7_0/S_AXI_HP0_ACLK",
           "proc_sys_reset_0/slowest_sync_clk",
+          "processing_system7_0/M_AXI_GP0_ACLK",
+          "processing_system7_0/S_AXI_HP0_ACLK",
+          "smartconnect_0/aclk",
           "smartconnect_1/aclk",
-          "processing_system7_0/M_AXI_GP0_ACLK"
+          "ila_0/clk"
         ]
       },
       "clk_wiz_0_clk_out3": {
         "ports": [
           "clk_wiz_0/clk_out2",
-          "rgb2dvi_0/PixelClk",
           "camera_configure_0/clk",
           "v_axi4s_vid_out_0/aclk",
           "v_tc_0/clk",
           "XCLK",
+          "axi_vdma_0/m_axis_mm2s_aclk",
           "rst_25M/slowest_sync_clk",
-          "axi_vdma_0/m_axis_mm2s_aclk"
+          "rgb2dvi_0/PixelClk",
+          "ila_0/probe2"
         ]
       },
       "clk_wiz_0_clk_out4": {
@@ -2120,7 +2115,6 @@
         "ports": [
           "ov7670_axi_stream_ca_0/aclk",
           "axi_vdma_0/s_axis_s2mm_aclk",
-          "system_ila_0/clk",
           "rst_pclk/slowest_sync_clk"
         ]
       },
@@ -2159,8 +2153,8 @@
         "ports": [
           "processing_system7_0/FCLK_RESET0_N",
           "proc_sys_reset_0/ext_reset_in",
-          "rst_pclk/ext_reset_in",
-          "rst_25M/ext_reset_in"
+          "rst_25M/ext_reset_in",
+          "rst_pclk/ext_reset_in"
         ]
       },
       "rst_25M_peripheral_aresetn": {
@@ -2173,19 +2167,15 @@
       "rst_25M_peripheral_reset": {
         "ports": [
           "rst_25M/peripheral_reset",
-          "rgb2dvi_0/aRst"
-        ]
-      },
-      "rst_design_1_100M_peripheral_aresetn": {
-        "ports": [
-          "rst_pclk/peripheral_aresetn",
-          "system_ila_0/resetn"
+          "rgb2dvi_0/aRst",
+          "ila_0/probe3"
         ]
       },
       "start_0_1": {
         "ports": [
           "start_0",
-          "camera_configure_0/start"
+          "camera_configure_0/start",
+          "ila_0/probe0"
         ]
       },
       "v_axi4s_vid_out_0_vtg_ce": {
