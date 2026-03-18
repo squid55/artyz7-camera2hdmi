@@ -1,0 +1,192 @@
+20:48:25 INFO  : updated workspace path: /home/hyw75/camera2hdmi_final/vitis_workspace
+20:48:25 INFO  : Marking the target connection as default Local
+20:48:25 INFO  : Marking the target connection as default Linux Agent
+20:48:25 INFO  : Marking the target connection as default XRTServer
+20:48:25 INFO  : Marking the target connection as default LinuxEmulation
+20:48:25 INFO  : Marking the target connection as default QEMU
+20:48:25 INFO  : Platform  my_platform creation started.
+20:48:25 INFO  : Found no platform with name 'design_1_wrapper' in install repositories
+20:48:30 INFO  : bash, -c, source /tools/Xilinx/Vitis/2023.2/tps/lnx64/lopper-1.1.0/env/bin/activate && xsct /tools/Xilinx/Vitis/2023.2/vitisng-server/scripts/platformutil.tcl /home/hyw75/camera2hdmi_final/design_1_wrapper.xsa /home/hyw75/camera2hdmi_final/vitis_workspace/my_platform/hw/sdt && deactivate
+20:48:40 INFO  : INFO: [Hsi 55-2053] elapsed time for repository (/tools/Xilinx/Vitis/2023.2/data/embeddedsw) loading 1 seconds
+20:48:40 INFO  : WARNING: [Common 17-673] Cannot get value of property 'C_ENABLE_DEBUG_INFO_15' because this property is not valid in conjunction with other property setting on this object.
+20:48:40 INFO  : WARNING: [Common 17-673] Cannot get value of property 'C_ENABLE_DEBUG_INFO_14' because this property is not valid in conjunction with other property setting on this object.
+20:48:40 INFO  : WARNING: [Common 17-673] Cannot get value of property 'C_ENABLE_DEBUG_INFO_7' because this property is not valid in conjunction with other property setting on this object.
+20:48:40 INFO  : WARNING: [Common 17-673] Cannot get value of property 'C_ENABLE_DEBUG_INFO_6' because this property is not valid in conjunction with other property setting on this object.
+20:48:40 INFO  : WARNING: [Common 17-673] Cannot get value of property 'C_INCLUDE_MM2S' because this property is not valid in conjunction with other property setting on this object.
+20:48:40 INFO  : WARNING: [Common 17-673] Cannot get value of property 'CONFIG.C_M_AXIS_MM2S_DATA_WIDTH' because this property is not valid in conjunction with other property setting on this object.
+20:48:40 INFO  : WARNING: [Common 17-673] Cannot get value of property 'C_INCLUDE_S2MM' because this property is not valid in conjunction with other property setting on this object.
+20:48:40 INFO  : WARNING: [Common 17-673] Cannot get value of property 'C_ENABLE_VERT_FLIP' because this property is not valid in conjunction with other property setting on this object.
+20:48:40 INFO  : WARNING: [Common 17-673] Cannot get value of property 'CONFIG.C_S_AXIS_S2MM_DATA_WIDTH' because this property is not valid in conjunction with other property setting on this object.
+20:48:40 INFO  : SDT generated successfully
+20:48:40 INFO  : Lopper command for cpu List generation: lopper -O /home/hyw75/camera2hdmi_final/vitis_workspace/.rigel_lopper -f -i /tools/Xilinx/Vitis/2023.2/tps/lnx64/lopper-1.1.0/env/lib/python3.8/site-packages/lopper/lops/lop-cpulist.dts /home/hyw75/camera2hdmi_final/vitis_workspace/my_platform/hw/sdt/system-top.dts
+20:48:40 INFO  : bash, -c, source /tools/Xilinx/Vitis/2023.2/tps/lnx64/lopper-1.1.0/env/bin/activate && lopper -O /home/hyw75/camera2hdmi_final/vitis_workspace/.rigel_lopper -f -i /tools/Xilinx/Vitis/2023.2/tps/lnx64/lopper-1.1.0/env/lib/python3.8/site-packages/lopper/lops/lop-cpulist.dts /home/hyw75/camera2hdmi_final/vitis_workspace/my_platform/hw/sdt/system-top.dts && deactivate
+20:48:41 INFO  : ps7_cortexa9_0
+20:48:41 INFO  : ps7_cortexa9_1
+20:48:41 INFO  : CPU List generated successfully
+20:48:41 INFO  : SDT generated successfully.
+20:48:41 INFO  : created .gitignore file for the project /home/hyw75/camera2hdmi_final/vitis_workspace/my_platform
+20:48:41 INFO  : ZYNQ: Using the QEMU args from install at  : /tools/Xilinx/Vitis/2023.2/data/emulation/platforms/zynq/sw/a9_linux/qemu/qemu_args.txt
+20:48:41 INFO  : ZYNQ: Using the QEMU args from install at  : /tools/Xilinx/Vitis/2023.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+20:48:41 INFO  : ZYNQ: Using the QEMU args from install at  : /tools/Xilinx/Vitis/2023.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+20:48:41 INFO  : bash, -c, source /tools/Xilinx/Vitis/2023.2/tps/lnx64/lopper-1.1.0/env/bin/activate && python /tools/Xilinx/Vitis/2023.2/data/embeddedsw/scripts/pyesw//repo.py -st   /tools/Xilinx/Vitis/2023.2/data/embeddedsw && deactivate
+20:48:42 INFO  : Successfully created repository data at /home/hyw75/camera2hdmi_final/vitis_workspace
+20:48:42 INFO  : lopper command to generate BSP :python /tools/Xilinx/Vitis/2023.2/data/embeddedsw/scripts/pyesw//create_bsp.py -w /home/hyw75/camera2hdmi_final/vitis_workspace/my_platform/zynq_fsbl/zynq_fsbl_bsp -p ps7_cortexa9_0 -o standalone -s /home/hyw75/camera2hdmi_final/vitis_workspace/my_platform/hw/sdt/system-top.dts -t zynq_fsbl -r /home/hyw75/camera2hdmi_final/vitis_workspace/.repo.yaml
+20:48:42 INFO  : bash, -c, source /tools/Xilinx/Vitis/2023.2/tps/lnx64/lopper-1.1.0/env/bin/activate && python /tools/Xilinx/Vitis/2023.2/data/embeddedsw/scripts/pyesw//repo.py -st   /tools/Xilinx/Vitis/2023.2/data/embeddedsw && deactivate
+20:48:42 INFO  : bash, -c, source /tools/Xilinx/Vitis/2023.2/tps/lnx64/lopper-1.1.0/env/bin/activate && python /tools/Xilinx/Vitis/2023.2/data/embeddedsw/scripts/pyesw//create_bsp.py -w /home/hyw75/camera2hdmi_final/vitis_workspace/my_platform/zynq_fsbl/zynq_fsbl_bsp -p ps7_cortexa9_0 -o standalone -s /home/hyw75/camera2hdmi_final/vitis_workspace/my_platform/hw/sdt/system-top.dts -t zynq_fsbl -r /home/hyw75/camera2hdmi_final/vitis_workspace/.repo.yaml && deactivate
+20:48:43 INFO  : Successfully created repository data at /home/hyw75/camera2hdmi_final/vitis_workspace
+20:48:43 INFO  : lopper command to generate BSP :python /tools/Xilinx/Vitis/2023.2/data/embeddedsw/scripts/pyesw//create_bsp.py -w /home/hyw75/camera2hdmi_final/vitis_workspace/my_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp -p ps7_cortexa9_0 -o standalone -s /home/hyw75/camera2hdmi_final/vitis_workspace/my_platform/hw/sdt/system-top.dts -t empty_application -r /home/hyw75/camera2hdmi_final/vitis_workspace/.repo.yaml
+20:48:43 INFO  : bash, -c, source /tools/Xilinx/Vitis/2023.2/tps/lnx64/lopper-1.1.0/env/bin/activate && python /tools/Xilinx/Vitis/2023.2/data/embeddedsw/scripts/pyesw//create_bsp.py -w /home/hyw75/camera2hdmi_final/vitis_workspace/my_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp -p ps7_cortexa9_0 -o standalone -s /home/hyw75/camera2hdmi_final/vitis_workspace/my_platform/hw/sdt/system-top.dts -t empty_application -r /home/hyw75/camera2hdmi_final/vitis_workspace/.repo.yaml && deactivate
+20:48:53 INFO  : -- The C compiler identification is GNU 12.2.0
+20:48:53 INFO  : -- The CXX compiler identification is GNU 12.2.0
+20:48:53 INFO  : -- Detecting C compiler ABI info
+20:48:53 INFO  : -- Detecting C compiler ABI info - done
+20:48:53 INFO  : -- Check for working C compiler: /tools/Xilinx/Vitis/2023.2/gnu/aarch32/lin/gcc-arm-none-eabi/bin/arm-none-eabi-gcc - skipped
+20:48:53 INFO  : -- Detecting C compile features
+20:48:53 INFO  : -- Detecting C compile features - done
+20:48:53 INFO  : -- Detecting CXX compiler ABI info
+20:48:53 INFO  : -- Detecting CXX compiler ABI info - done
+20:48:53 INFO  : -- Check for working CXX compiler: /tools/Xilinx/Vitis/2023.2/gnu/aarch32/lin/gcc-arm-none-eabi/bin/arm-none-eabi-g++ - skipped
+20:48:53 INFO  : -- Detecting CXX compile features
+20:48:53 INFO  : -- Detecting CXX compile features - done
+20:48:53 INFO  : -- Configuring done
+20:48:53 INFO  : -- Generating done
+20:48:53 INFO  : CMake Warning:
+20:48:53 INFO  :   Manually-specified variables were not used by the project:
+20:48:53 INFO  : 
+20:48:53 INFO  :     CMAKE_LIBRARY_PATH
+20:48:53 INFO  : 
+20:48:53 INFO  : 
+20:48:53 INFO  : -- Build files have been written to: /home/hyw75/camera2hdmi_final/vitis_workspace/my_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp
+20:48:53 INFO  : Successfully created Domain at /home/hyw75/camera2hdmi_final/vitis_workspace/my_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp
+20:48:53 INFO  : Successfully Generated Domain /home/hyw75/camera2hdmi_final/vitis_workspace/my_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp
+20:48:53 INFO  : Domain standalone_ps7_cortexa9_0 added successfully.
+20:48:53 INFO  : -- The C compiler identification is GNU 12.2.0
+20:48:53 INFO  : -- The CXX compiler identification is GNU 12.2.0
+20:48:53 INFO  : -- Detecting C compiler ABI info
+20:48:53 INFO  : -- Detecting C compiler ABI info - done
+20:48:53 INFO  : -- Check for working C compiler: /tools/Xilinx/Vitis/2023.2/gnu/aarch32/lin/gcc-arm-none-eabi/bin/arm-none-eabi-gcc - skipped
+20:48:53 INFO  : -- Detecting C compile features
+20:48:53 INFO  : -- Detecting C compile features - done
+20:48:53 INFO  : -- Detecting CXX compiler ABI info
+20:48:53 INFO  : -- Detecting CXX compiler ABI info - done
+20:48:53 INFO  : -- Check for working CXX compiler: /tools/Xilinx/Vitis/2023.2/gnu/aarch32/lin/gcc-arm-none-eabi/bin/arm-none-eabi-g++ - skipped
+20:48:53 INFO  : -- Detecting CXX compile features
+20:48:53 INFO  : -- Detecting CXX compile features - done
+20:48:53 INFO  : -- Configuring done
+20:48:53 INFO  : -- Generating done
+20:48:53 INFO  : CMake Warning:
+20:48:53 INFO  :   Manually-specified variables were not used by the project:
+20:48:53 INFO  : 
+20:48:53 INFO  :     CMAKE_LIBRARY_PATH
+20:48:53 INFO  : 
+20:48:53 INFO  : 
+20:48:53 INFO  : -- Build files have been written to: /home/hyw75/camera2hdmi_final/vitis_workspace/my_platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp
+20:48:53 INFO  : Successfully created Domain at /home/hyw75/camera2hdmi_final/vitis_workspace/my_platform/zynq_fsbl/zynq_fsbl_bsp
+20:48:53 INFO  : Successfully Generated Domain /home/hyw75/camera2hdmi_final/vitis_workspace/my_platform/zynq_fsbl/zynq_fsbl_bsp
+20:48:53 INFO  : lopper command to create baremetal application :python /tools/Xilinx/Vitis/2023.2/data/embeddedsw/scripts/pyesw//create_app.py -s /home/hyw75/camera2hdmi_final/vitis_workspace/my_platform/zynq_fsbl -t zynq_fsbl -d /home/hyw75/camera2hdmi_final/vitis_workspace/my_platform/zynq_fsbl/zynq_fsbl_bsp -n fsbl -r /home/hyw75/camera2hdmi_final/vitis_workspace/.repo.yaml
+20:48:53 INFO  : bash, -c, source /tools/Xilinx/Vitis/2023.2/tps/lnx64/lopper-1.1.0/env/bin/activate && python /tools/Xilinx/Vitis/2023.2/data/embeddedsw/scripts/pyesw//validate_bsp.py -t zynq_fsbl -d /home/hyw75/camera2hdmi_final/vitis_workspace/my_platform/zynq_fsbl/zynq_fsbl_bsp -r /home/hyw75/camera2hdmi_final/vitis_workspace/.repo.yaml && deactivate
+20:48:53 INFO  : Successfully validated template zynq_fsbl
+20:48:53 INFO  : bash, -c, source /tools/Xilinx/Vitis/2023.2/tps/lnx64/lopper-1.1.0/env/bin/activate && python /tools/Xilinx/Vitis/2023.2/data/embeddedsw/scripts/pyesw//create_app.py -s /home/hyw75/camera2hdmi_final/vitis_workspace/my_platform/zynq_fsbl -t zynq_fsbl -d /home/hyw75/camera2hdmi_final/vitis_workspace/my_platform/zynq_fsbl/zynq_fsbl_bsp -n fsbl -r /home/hyw75/camera2hdmi_final/vitis_workspace/.repo.yaml && deactivate
+20:48:55 INFO  : Successfully Created Application sources at /home/hyw75/camera2hdmi_final/vitis_workspace/my_platform/zynq_fsbl
+20:48:55 INFO  : Successfully created Application /home/hyw75/camera2hdmi_final/vitis_workspace/my_platform/zynq_fsbl
+20:48:55 INFO  : Platform FSBL Boot domain added successfully.
+20:48:55 INFO  : Platform creation finished successfully.
+20:48:55 INFO  : Platform Quick Build initiated.
+20:48:55 INFO  : Generating Export directory
+20:48:55 INFO  : Generated platform metadata for creating application(s) based on platform my_platform.
+20:48:56 INFO  : BSP build will be initiated for Domain standalone_ps7_cortexa9_0
+20:48:56 INFO  : BSP build will be initiated for Domain zynq_fsbl
+20:48:56 INFO  : Generating BSP for the domain /home/hyw75/camera2hdmi_final/vitis_workspace/my_platform/zynq_fsbl/zynq_fsbl_bsp
+20:48:56 INFO  : Generating BSP for the domain /home/hyw75/camera2hdmi_final/vitis_workspace/my_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp
+20:48:56 INFO  : lopper command to build BSP :python /tools/Xilinx/Vitis/2023.2/data/embeddedsw/scripts/pyesw//build_bsp.py -d /home/hyw75/camera2hdmi_final/vitis_workspace/my_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp
+20:48:56 INFO  : lopper command to build BSP :python /tools/Xilinx/Vitis/2023.2/data/embeddedsw/scripts/pyesw//build_bsp.py -d /home/hyw75/camera2hdmi_final/vitis_workspace/my_platform/zynq_fsbl/zynq_fsbl_bsp
+20:48:56 INFO  : bash, -c, source /tools/Xilinx/Vitis/2023.2/tps/lnx64/lopper-1.1.0/env/bin/activate && python /tools/Xilinx/Vitis/2023.2/data/embeddedsw/scripts/pyesw//build_bsp.py -d /home/hyw75/camera2hdmi_final/vitis_workspace/my_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp && deactivate
+20:48:56 INFO  : bash, -c, source /tools/Xilinx/Vitis/2023.2/tps/lnx64/lopper-1.1.0/env/bin/activate && python /tools/Xilinx/Vitis/2023.2/data/embeddedsw/scripts/pyesw//build_bsp.py -d /home/hyw75/camera2hdmi_final/vitis_workspace/my_platform/zynq_fsbl/zynq_fsbl_bsp && deactivate
+20:49:01 INFO  : Domain build successfully
+20:49:01 INFO  : Domain build successfully
+20:49:01 INFO  : Generating Boot ELFs
+20:49:01 INFO  : lopper command to build baremetal application :python /tools/Xilinx/Vitis/2023.2/data/embeddedsw/scripts/pyesw//build_app.py -s /home/hyw75/camera2hdmi_final/vitis_workspace/my_platform/zynq_fsbl -b /home/hyw75/camera2hdmi_final/vitis_workspace/my_platform/zynq_fsbl/build
+20:49:01 INFO  : bash, -c, source /tools/Xilinx/Vitis/2023.2/tps/lnx64/lopper-1.1.0/env/bin/activate && python /tools/Xilinx/Vitis/2023.2/data/embeddedsw/scripts/pyesw//build_app.py -s /home/hyw75/camera2hdmi_final/vitis_workspace/my_platform/zynq_fsbl -b /home/hyw75/camera2hdmi_final/vitis_workspace/my_platform/zynq_fsbl/build && deactivate
+20:49:03 INFO  : Successfully building the baremetal application/home/hyw75/camera2hdmi_final/vitis_workspace/my_platform/zynq_fsbl/build
+20:49:03 INFO  : Generating Export directory
+20:49:03 INFO  : Platform Build Finished successfully.
+20:49:04 INFO  : lopper command to create baremetal application :python /tools/Xilinx/Vitis/2023.2/data/embeddedsw/scripts/pyesw//create_app.py -s /home/hyw75/camera2hdmi_final/vitis_workspace/camera_app/src -t hello_world -d /home/hyw75/camera2hdmi_final/vitis_workspace/my_platform/export/my_platform/sw/standalone_ps7_cortexa9_0 -n camera_app -r /home/hyw75/camera2hdmi_final/vitis_workspace/.repo.yaml
+20:49:04 INFO  : bash, -c, source /tools/Xilinx/Vitis/2023.2/tps/lnx64/lopper-1.1.0/env/bin/activate && python /tools/Xilinx/Vitis/2023.2/data/embeddedsw/scripts/pyesw//validate_bsp.py -t hello_world -d /home/hyw75/camera2hdmi_final/vitis_workspace/my_platform/export/my_platform/sw/standalone_ps7_cortexa9_0 -r /home/hyw75/camera2hdmi_final/vitis_workspace/.repo.yaml && deactivate
+20:49:04 INFO  : Successfully validated template hello_world
+20:49:04 INFO  : bash, -c, source /tools/Xilinx/Vitis/2023.2/tps/lnx64/lopper-1.1.0/env/bin/activate && python /tools/Xilinx/Vitis/2023.2/data/embeddedsw/scripts/pyesw//create_app.py -s /home/hyw75/camera2hdmi_final/vitis_workspace/camera_app/src -t hello_world -d /home/hyw75/camera2hdmi_final/vitis_workspace/my_platform/export/my_platform/sw/standalone_ps7_cortexa9_0 -n camera_app -r /home/hyw75/camera2hdmi_final/vitis_workspace/.repo.yaml && deactivate
+20:49:08 INFO  : Successfully Created Application sources at /home/hyw75/camera2hdmi_final/vitis_workspace/camera_app/src
+20:49:08 INFO  : Successfully created Application /home/hyw75/camera2hdmi_final/vitis_workspace/camera_app/src
+20:49:08 INFO  : created .gitignore file for the project /home/hyw75/camera2hdmi_final/vitis_workspace/camera_app
+20:49:08 INFO  : The hardware specification used by project '/home/hyw75/camera2hdmi_final/vitis_workspace/camera_app' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+20:49:08 INFO  : The updated bitstream files are copied from platform to folder '/home/hyw75/camera2hdmi_final/vitis_workspace/camera_app/_ide/bitstream' in project '/home/hyw75/camera2hdmi_final/vitis_workspace/camera_app'.
+20:49:08 INFO  : The updated ps init files are copied from platform to folder '/home/hyw75/camera2hdmi_final/vitis_workspace/camera_app/_ide/psinit' in project '/home/hyw75/camera2hdmi_final/vitis_workspace/camera_app'.
+20:49:08 INFO  : bash, -c, source /tools/Xilinx/Vitis/2023.2/tps/lnx64/lopper-1.1.0/env/bin/activate && python /tools/Xilinx/Vitis/2023.2/data/embeddedsw/scripts/pyesw//build_app.py -s /home/hyw75/camera2hdmi_final/vitis_workspace/camera_app/src -b /home/hyw75/camera2hdmi_final/vitis_workspace/camera_app/build && deactivate
+20:49:10 INFO  : connection terminated
+20:49:10 INFO  : scheduling shutdown timer for 60 seconds ...
+20:49:10 INFO  : Terminating Vitis C++ Server
+20:49:10 INFO  : Vitis C++ Server terminated
+20:50:53 INFO  : updated workspace path: /home/hyw75/camera2hdmi_final/vitis_workspace
+20:50:53 INFO  : created .gitignore file for the project /home/hyw75/camera2hdmi_final/vitis_workspace
+20:50:53 INFO  : bash, -c, source /tools/Xilinx/Vitis/2023.2/tps/lnx64/lopper-1.1.0/env/bin/activate && python /tools/Xilinx/Vitis/2023.2/data/embeddedsw/scripts/pyesw//build_app.py -s /home/hyw75/camera2hdmi_final/vitis_workspace/camera_app/src -b /home/hyw75/camera2hdmi_final/vitis_workspace/camera_app/build && deactivate
+20:50:54 ERROR : camera_app build failed. 
+20:50:54 INFO  : connection terminated
+20:50:54 INFO  : scheduling shutdown timer for 60 seconds ...
+20:50:54 INFO  : Terminating Vitis C++ Server
+20:50:54 INFO  : Vitis C++ Server terminated
+20:14:35 INFO  : updated workspace path: /home/hyw75/camera2hdmi_final/vitis_workspace
+20:14:35 INFO  : created .gitignore file for the project /home/hyw75/camera2hdmi_final/vitis_workspace
+20:14:35 INFO  : connection terminated
+20:14:35 INFO  : scheduling shutdown timer for 60 seconds ...
+20:14:35 INFO  : Terminating Vitis C++ Server
+20:14:35 INFO  : Vitis C++ Server terminated
+20:21:13 INFO  : updated workspace path: /home/hyw75/camera2hdmi_final/vitis_workspace
+20:21:13 INFO  : connection terminated
+20:21:13 INFO  : scheduling shutdown timer for 60 seconds ...
+20:21:13 INFO  : Terminating Vitis C++ Server
+20:27:01 INFO  : updated workspace path: /home/hyw75/camera2hdmi_final/vitis_workspace
+20:27:08 INFO  : created .gitignore file for the project /home/hyw75/camera2hdmi_final/vitis_workspace
+20:27:08 INFO  : connection terminated
+20:27:08 INFO  : scheduling shutdown timer for 60 seconds ...
+20:27:08 INFO  : Terminating Vitis C++ Server
+20:27:08 INFO  : Vitis C++ Server terminated
+22:09:45 INFO  : updated workspace path: /home/hyeonjun/AMD/Vivado/source/camera2hdmi_final1.01/camera2hdmi_final1.01/vitis_workspace
+22:09:45 INFO  : created .gitignore file for the project /home/hyeonjun/AMD/Vivado/source/camera2hdmi_final1.01/camera2hdmi_final1.01/vitis_workspace
+22:09:45 INFO  : updated workspace path: /home/hyeonjun/AMD/Vivado/source/camera2hdmi_final1.01/camera2hdmi_final1.01/vitis_workspace
+22:09:45 INFO  : created .gitignore file for the project /home/hyeonjun/AMD/Vivado/source/camera2hdmi_final1.01/camera2hdmi_final1.01/vitis_workspace
+22:09:45 INFO  : bash, -c, source /home/hyeonjun/AMD/Vitis/2023.2/tps/lnx64/lopper-1.1.0/env/bin/activate && python /home/hyeonjun/AMD/Vitis/2023.2/data/embeddedsw/scripts/pyesw//repo.py -st   /home/hyeonjun/AMD/Vitis/2023.2/data/embeddedsw && deactivate
+22:09:45 INFO  : Traceback (most recent call last):
+22:09:45 INFO  :   File "/home/hyeonjun/AMD/Vitis/2023.2/data/embeddedsw/scripts/pyesw//repo.py", line 13, in <module>
+22:09:45 INFO  :     import utils
+22:09:45 INFO  :   File "/home/hyeonjun/AMD/Vitis/2023.2/data/embeddedsw/scripts/pyesw/utils.py", line 16, in <module>
+22:09:45 INFO  :     import yaml
+22:09:45 INFO  : ModuleNotFoundError: No module named 'yaml'
+22:09:45 ERROR : Error in Creating Embedded Repositories at '/home/hyeonjun/AMD/Vivado/source/camera2hdmi_final1.01/camera2hdmi_final1.01/vitis_workspace'.
+22:09:45 ERROR : Error in Creating Embedded Repositories at '/home/hyeonjun/AMD/Vivado/source/camera2hdmi_final1.01/camera2hdmi_final1.01/vitis_workspace'.
+22:09:45 INFO  : bash, -c, source /home/hyeonjun/AMD/Vitis/2023.2/tps/lnx64/lopper-1.1.0/env/bin/activate && python /home/hyeonjun/AMD/Vitis/2023.2/data/embeddedsw/scripts/pyesw//repo.py -st   /home/hyeonjun/AMD/Vitis/2023.2/data/embeddedsw && deactivate
+22:09:45 INFO  : Traceback (most recent call last):
+22:09:45 INFO  :   File "/home/hyeonjun/AMD/Vitis/2023.2/data/embeddedsw/scripts/pyesw//repo.py", line 13, in <module>
+22:09:45 INFO  :     import utils
+22:09:45 INFO  :   File "/home/hyeonjun/AMD/Vitis/2023.2/data/embeddedsw/scripts/pyesw/utils.py", line 16, in <module>
+22:09:45 INFO  :     import yaml
+22:09:45 INFO  : ModuleNotFoundError: No module named 'yaml'
+22:09:45 ERROR : Error in Creating Embedded Repositories at '/home/hyeonjun/AMD/Vivado/source/camera2hdmi_final1.01/camera2hdmi_final1.01/vitis_workspace'.
+22:09:45 ERROR : Error in Creating Embedded Repositories at '/home/hyeonjun/AMD/Vivado/source/camera2hdmi_final1.01/camera2hdmi_final1.01/vitis_workspace'.
+22:09:45 INFO  : Found no platform with name 'my_platform' in install repositories
+22:09:50 INFO  : Found no platform with name 'my_platform' in install repositories
+22:09:51 INFO  : Found no platform with name 'my_platform' in install repositories
+22:09:57 INFO  : Found no platform with name 'my_platform' in install repositories
+22:09:59 INFO  : Found no platform with name 'my_platform' in install repositories
+22:10:01 INFO  : Found no platform with name 'my_platform' in install repositories
+22:11:52 INFO  : Found no platform with name 'my_platform' in install repositories
+22:30:50 INFO  : Found no platform with name 'my_platform' in install repositories
+22:31:27 INFO  : Found no platform with name 'my_platform' in install repositories
+22:31:49 INFO  : Found no platform with name 'my_platform' in install repositories
+22:36:47 INFO  : Found no platform with name 'my_platform' in install repositories
+22:36:48 INFO  : Found no platform with name 'my_platform' in install repositories
+22:37:12 INFO  : Found no platform with name 'my_platform' in install repositories
+22:37:13 INFO  : Found no platform with name 'my_platform' in install repositories
+22:37:13 INFO  : Found no platform with name 'my_platform' in install repositories
+22:37:26 INFO  : Found no platform with name 'my_platform' in install repositories
+22:37:31 INFO  : Found no platform with name 'my_platform' in install repositories
+22:37:32 INFO  : Found no platform with name 'my_platform' in install repositories
+22:53:16 INFO  : Terminating Vitis C++ Server

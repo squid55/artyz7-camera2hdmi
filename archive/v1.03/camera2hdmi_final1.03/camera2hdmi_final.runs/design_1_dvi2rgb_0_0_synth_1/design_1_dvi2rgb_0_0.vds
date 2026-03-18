@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu Mar 12 21:37:56 2026
+# Process ID: 27562
+# Current directory: /home/hyw75/camera2hdmi_final/camera2hdmi_final.runs/design_1_dvi2rgb_0_0_synth_1
+# Command line: vivado -log design_1_dvi2rgb_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_dvi2rgb_0_0.tcl
+# Log file: /home/hyw75/camera2hdmi_final/camera2hdmi_final.runs/design_1_dvi2rgb_0_0_synth_1/design_1_dvi2rgb_0_0.vds
+# Journal file: /home/hyw75/camera2hdmi_final/camera2hdmi_final.runs/design_1_dvi2rgb_0_0_synth_1/vivado.jou
+# Running On: LAPTOP-ODJSC7FS, OS: Linux, CPU Frequency: 2995.199 MHz, CPU Physical cores: 9, Host memory: 8117 MB
+#-----------------------------------------------------------
+source design_1_dvi2rgb_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1298.875 ; gain = 47.840 ; free physical = 1870 ; free virtual = 4035
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/hyw75/vivado_project/vivado-library-master'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_dvi2rgb_0_0
+Command: synth_design -top design_1_dvi2rgb_0_0 -part xc7z010clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1

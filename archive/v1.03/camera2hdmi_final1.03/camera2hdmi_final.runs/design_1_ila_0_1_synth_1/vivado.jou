@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Mar 16 14:02:37 2026
+# Process ID: 26674
+# Current directory: /home/hyeonjun/AMD/Vivado/source/camera2hdmi_final1.02/camera2hdmi_final.runs/design_1_ila_0_1_synth_1
+# Command line: vivado -log design_1_ila_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_ila_0_1.tcl
+# Log file: /home/hyeonjun/AMD/Vivado/source/camera2hdmi_final1.02/camera2hdmi_final.runs/design_1_ila_0_1_synth_1/design_1_ila_0_1.vds
+# Journal file: /home/hyeonjun/AMD/Vivado/source/camera2hdmi_final1.02/camera2hdmi_final.runs/design_1_ila_0_1_synth_1/vivado.jou
+# Running On: hyeonjun-ThinkPad-X13-Gen-1, OS: Linux, CPU Frequency: 3875.599 MHz, CPU Physical cores: 12, Host memory: 32833 MB
+#-----------------------------------------------------------
+source design_1_ila_0_1.tcl -notrace

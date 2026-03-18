@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu Mar 12 21:39:10 2026
+# Process ID: 28207
+# Current directory: /home/hyw75/camera2hdmi_final
+# Command line: vivado
+# Log file: /home/hyw75/camera2hdmi_final/vivado.log
+# Journal file: /home/hyw75/camera2hdmi_final/vivado.jou
+# Running On: LAPTOP-ODJSC7FS, OS: Linux, CPU Frequency: 2995.199 MHz, CPU Physical cores: 9, Host memory: 8117 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/hyw75/camera2hdmi_final/camera2hdmi_final.xpr

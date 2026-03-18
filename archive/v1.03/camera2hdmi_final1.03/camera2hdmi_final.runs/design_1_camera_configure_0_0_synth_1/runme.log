@@ -1,0 +1,283 @@
+
+*** Running vivado
+    with args -log design_1_camera_configure_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_camera_configure_0_0.tcl
+
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_camera_configure_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1320.129 ; gain = 0.027 ; free physical = 4340 ; free virtual = 6522
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/hyw75/vivado_project/vivado-library-master'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_camera_configure_0_0
+Command: synth_design -top design_1_camera_configure_0_0 -part xc7z010clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9439
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2058.055 ; gain = 405.684 ; free physical = 2344 ; free virtual = 4536
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_camera_configure_0_0' [/home/hyw75/camera2hdmi_final/camera2hdmi_final.gen/sources_1/bd/design_1/ip/design_1_camera_configure_0_0/synth/design_1_camera_configure_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'camera_configure' [/home/hyw75/camera2hdmi_final/camera2hdmi_final.srcs/sources_1/new/camera_configure.v:23]
+	Parameter CLK_FREQ bound to: 25000000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'OV7670_config_rom' [/home/hyw75/camera2hdmi_final/camera2hdmi_final.srcs/sources_1/new/OV7670_config_rom.v:23]
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000000110110 is unreachable [/home/hyw75/camera2hdmi_final/camera2hdmi_final.srcs/sources_1/new/OV7670_config_rom.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'OV7670_config_rom' (0#1) [/home/hyw75/camera2hdmi_final/camera2hdmi_final.srcs/sources_1/new/OV7670_config_rom.v:23]
+INFO: [Synth 8-6157] synthesizing module 'OV7670_config' [/home/hyw75/camera2hdmi_final/camera2hdmi_final.srcs/sources_1/new/OV7670_config.v:23]
+	Parameter CLK_FREQ bound to: 25000000 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/hyw75/camera2hdmi_final/camera2hdmi_final.srcs/sources_1/new/OV7670_config.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'OV7670_config' (0#1) [/home/hyw75/camera2hdmi_final/camera2hdmi_final.srcs/sources_1/new/OV7670_config.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SCCB_interface' [/home/hyw75/camera2hdmi_final/camera2hdmi_final.srcs/sources_1/new/SCCB_interface.v:23]
+	Parameter CLK_FREQ bound to: 25000000 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/hyw75/camera2hdmi_final/camera2hdmi_final.srcs/sources_1/new/SCCB_interface.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'SCCB_interface' (0#1) [/home/hyw75/camera2hdmi_final/camera2hdmi_final.srcs/sources_1/new/SCCB_interface.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'camera_configure' (0#1) [/home/hyw75/camera2hdmi_final/camera2hdmi_final.srcs/sources_1/new/camera_configure.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_camera_configure_0_0' (0#1) [/home/hyw75/camera2hdmi_final/camera2hdmi_final.gen/sources_1/bd/design_1/ip/design_1_camera_configure_0_0/synth/design_1_camera_configure_0_0.v:53]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2137.023 ; gain = 484.652 ; free physical = 2135 ; free virtual = 4328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2151.867 ; gain = 499.496 ; free physical = 2128 ; free virtual = 4321
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2151.867 ; gain = 499.496 ; free physical = 2128 ; free virtual = 4321
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2151.867 ; gain = 0.000 ; free physical = 2126 ; free virtual = 4319
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2291.617 ; gain = 0.000 ; free physical = 2089 ; free virtual = 4283
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2291.652 ; gain = 0.000 ; free physical = 2088 ; free virtual = 4281
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2291.652 ; gain = 639.281 ; free physical = 2077 ; free virtual = 4272
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2291.652 ; gain = 639.281 ; free physical = 2077 ; free virtual = 4272
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2291.652 ; gain = 639.281 ; free physical = 2077 ; free virtual = 4272
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2291.652 ; gain = 639.281 ; free physical = 2077 ; free virtual = 4272
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 6     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---ROMs : 
+	                    ROMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 2     
+	   7 Input   32 Bit        Muxes := 1     
+	  14 Input   32 Bit        Muxes := 1     
+	  14 Input    8 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 1     
+	  14 Input    4 Bit        Muxes := 2     
+	   4 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   3 Input    2 Bit        Muxes := 1     
+	  14 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 15    
+	   4 Input    1 Bit        Muxes := 7     
+	   3 Input    1 Bit        Muxes := 4     
+	  14 Input    1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-6040] Register inst/config_1/rom_addr_reg_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2291.652 ; gain = 639.281 ; free physical = 2058 ; free virtual = 4254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------------------------+--------------------+---------------+----------------+
+|Module Name                   | RTL Object         | Depth x Width | Implemented As | 
++------------------------------+--------------------+---------------+----------------+
+|design_1_camera_configure_0_0 | inst/rom1/dout_reg | 256x16        | Block RAM      | 
++------------------------------+--------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2291.652 ; gain = 639.281 ; free physical = 2052 ; free virtual = 4248
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2291.652 ; gain = 639.281 ; free physical = 2034 ; free virtual = 4230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/rom1/dout_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2291.652 ; gain = 639.281 ; free physical = 1979 ; free virtual = 4176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_0' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_1' to logic
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2291.652 ; gain = 639.281 ; free physical = 1951 ; free virtual = 4147
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2291.652 ; gain = 639.281 ; free physical = 1951 ; free virtual = 4147
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2291.652 ; gain = 639.281 ; free physical = 1951 ; free virtual = 4147
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2291.652 ; gain = 639.281 ; free physical = 1951 ; free virtual = 4147
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2291.652 ; gain = 639.281 ; free physical = 1951 ; free virtual = 4147
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2291.652 ; gain = 639.281 ; free physical = 1951 ; free virtual = 4147
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    16|
+|2     |LUT1     |    63|
+|3     |LUT2     |    14|
+|4     |LUT3     |     7|
+|5     |LUT4     |    34|
+|6     |LUT5     |    18|
+|7     |LUT6     |    45|
+|8     |RAMB18E1 |     1|
+|9     |FDRE     |   126|
+|10    |FDSE     |     7|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2291.652 ; gain = 639.281 ; free physical = 1951 ; free virtual = 4147
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 2 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 2291.652 ; gain = 499.496 ; free physical = 1950 ; free virtual = 4147
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2291.652 ; gain = 639.281 ; free physical = 1950 ; free virtual = 4147
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2291.652 ; gain = 0.000 ; free physical = 1950 ; free virtual = 4147
+INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2291.652 ; gain = 0.000 ; free physical = 2519 ; free virtual = 4715
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: a0169203
+INFO: [Common 17-83] Releasing license: Synthesis
+32 Infos, 3 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:37 . Memory (MB): peak = 2291.652 ; gain = 965.586 ; free physical = 2520 ; free virtual = 4716
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1788.995; main = 1504.318; forked = 353.458
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3250.043; main = 2291.617; forked = 990.441
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2315.629 ; gain = 0.000 ; free physical = 2520 ; free virtual = 4716
+INFO: [Common 17-1381] The checkpoint '/home/hyw75/camera2hdmi_final/camera2hdmi_final.runs/design_1_camera_configure_0_0_synth_1/design_1_camera_configure_0_0.dcp' has been generated.
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Coretcl 2-1174] Renamed 4 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2315.629 ; gain = 0.000 ; free physical = 2510 ; free virtual = 4707
+INFO: [Common 17-1381] The checkpoint '/home/hyw75/camera2hdmi_final/camera2hdmi_final.runs/design_1_camera_configure_0_0_synth_1/design_1_camera_configure_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_camera_configure_0_0_utilization_synth.rpt -pb design_1_camera_configure_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 13 17:02:12 2026...

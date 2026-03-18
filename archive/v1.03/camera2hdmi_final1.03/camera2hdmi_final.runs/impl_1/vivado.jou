@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Mar 16 18:53:21 2026
+# Process ID: 10571
+# Current directory: /home/hyeonjun/AMD/Vivado/source/camera2hdmi_final1.03/camera2hdmi_final.runs/impl_1
+# Command line: vivado -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file: /home/hyeonjun/AMD/Vivado/source/camera2hdmi_final1.03/camera2hdmi_final.runs/impl_1/design_1_wrapper.vdi
+# Journal file: /home/hyeonjun/AMD/Vivado/source/camera2hdmi_final1.03/camera2hdmi_final.runs/impl_1/vivado.jou
+# Running On: hyeonjun-ThinkPad-X13-Gen-1, OS: Linux, CPU Frequency: 1380.452 MHz, CPU Physical cores: 12, Host memory: 32833 MB
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace

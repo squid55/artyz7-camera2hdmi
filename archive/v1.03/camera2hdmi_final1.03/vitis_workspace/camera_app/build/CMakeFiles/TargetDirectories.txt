@@ -1,0 +1,3 @@
+/home/hyeonjun/AMD/Vivado/source/camera2hdmi_final1.01/camera2hdmi_final1.01/vitis_workspace/camera_app/build/CMakeFiles/camera_app.elf.dir
+/home/hyeonjun/AMD/Vivado/source/camera2hdmi_final1.01/camera2hdmi_final1.01/vitis_workspace/camera_app/build/CMakeFiles/edit_cache.dir
+/home/hyeonjun/AMD/Vivado/source/camera2hdmi_final1.01/camera2hdmi_final1.01/vitis_workspace/camera_app/build/CMakeFiles/rebuild_cache.dir

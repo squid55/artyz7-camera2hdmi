@@ -1,0 +1,82 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.353481",
+   "Default View_TopLeft":"-311,3",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port DDR_0 -pg 1 -lvl 8 -x 2590 -y 240 -defaultsOSRD
+preplace port FIXED_IO_0 -pg 1 -lvl 8 -x 2590 -y 260 -defaultsOSRD
+preplace port TMDS_0 -pg 1 -lvl 8 -x 2590 -y 730 -defaultsOSRD
+preplace port port-id_pclk_0 -pg 1 -lvl 0 -x -20 -y 1110 -defaultsOSRD
+preplace port port-id_vsync_0 -pg 1 -lvl 0 -x -20 -y 1130 -defaultsOSRD
+preplace port port-id_href_0 -pg 1 -lvl 0 -x -20 -y 1150 -defaultsOSRD
+preplace port port-id_start_0 -pg 1 -lvl 0 -x -20 -y 1230 -defaultsOSRD
+preplace port port-id_siod_0 -pg 1 -lvl 8 -x 2590 -y 1220 -defaultsOSRD
+preplace port port-id_sioc_0 -pg 1 -lvl 8 -x 2590 -y 1200 -defaultsOSRD
+preplace port port-id_XCLK -pg 1 -lvl 8 -x 2590 -y 820 -defaultsOSRD
+preplace port port-id_done_0 -pg 1 -lvl 8 -x 2590 -y 1240 -defaultsOSRD
+preplace portBus d_0 -pg 1 -lvl 0 -x -20 -y 1170 -defaultsOSRD
+preplace inst v_axi4s_vid_out_0 -pg 1 -lvl 6 -x 1940 -y 600 -defaultsOSRD
+preplace inst v_tc_0 -pg 1 -lvl 5 -x 1560 -y 690 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 2 -x 520 -y 730 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 7 -x 2340 -y 280 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -x 210 -y 510 -defaultsOSRD
+preplace inst axi_vdma_0 -pg 1 -lvl 5 -x 1560 -y 370 -defaultsOSRD
+preplace inst smartconnect_0 -pg 1 -lvl 6 -x 1940 -y 90 -defaultsOSRD
+preplace inst smartconnect_1 -pg 1 -lvl 4 -x 1080 -y 270 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 4 -x 1080 -y 1040 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 5 -x 1560 -y 1130 -defaultsOSRD
+preplace inst camera_configure_0 -pg 1 -lvl 7 -x 2340 -y 1220 -defaultsOSRD
+preplace inst ov7670_axi_stream_ca_0 -pg 1 -lvl 4 -x 1080 -y 1190 -defaultsOSRD
+preplace inst rgb2dvi_0 -pg 1 -lvl 7 -x 2340 -y 730 -defaultsOSRD
+preplace inst rst_pclk -pg 1 -lvl 4 -x 1080 -y 900 -defaultsOSRD
+preplace inst rst_25M -pg 1 -lvl 4 -x 1080 -y 600 -defaultsOSRD
+preplace inst ila_0 -pg 1 -lvl 3 -x 770 -y 570 -defaultsOSRD
+preplace inst system_ila_0 -pg 1 -lvl 5 -x 1560 -y 920 -defaultsOSRD
+preplace netloc camera_configure_0_done 1 2 6 660 1300 N 1300 N 1300 N 1300 N 1300 2560J
+preplace netloc camera_configure_0_sioc 1 7 1 NJ 1200
+preplace netloc camera_configure_0_siod 1 7 1 NJ 1220
+preplace netloc clk_wiz_0_clk_out2 1 0 7 20 400 NJ 400 630 280 880 170 1290 170 1780 190 2090
+preplace netloc clk_wiz_0_clk_out3 1 2 6 640 670 870 500 1300 520 1780 470 2100 820 NJ
+preplace netloc clk_wiz_0_clk_out4 1 2 5 N 740 870 780 1270J 810 1790J 760 NJ
+preplace netloc clk_wiz_0_locked 1 0 4 30 830 NJ 830 630 760 890
+preplace netloc d_0_1 1 0 4 NJ 1170 NJ 1170 NJ 1170 870
+preplace netloc href_0_1 1 0 4 NJ 1150 NJ 1150 NJ 1150 880
+preplace netloc ov7670_axi_stream_ca_0_aclk 1 3 2 900 790 1320
+preplace netloc pclk_0_1 1 0 4 NJ 1110 NJ 1110 NJ 1110 900
+preplace netloc proc_sys_reset_0_interconnect_aresetn 1 1 5 390 390 N 390 870 120 NJ 120 NJ
+preplace netloc proc_sys_reset_0_mb_reset 1 1 1 400 470n
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 4 410J 460 NJ 460 N 460 1290
+preplace netloc processing_system7_0_FCLK_CLK0 1 1 7 420 820 NJ 820 870 800 1260J 830 NJ 830 NJ 830 2570
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 8 30 410 NJ 410 N 410 880 490 1310J 500 1750J 450 NJ 450 2560
+preplace netloc rst_25M_peripheral_aresetn 1 4 2 1340 560 1760J
+preplace netloc rst_25M_peripheral_reset 1 2 5 670 470 N 470 1260 510 1760J 460 2120J
+preplace netloc start_0_1 1 0 7 NJ 1230 NJ 1230 650J 1230 900 1280 1350J 1230 NJ 1230 NJ
+preplace netloc v_axi4s_vid_out_0_vtg_ce 1 4 3 1350 820 NJ 820 2090
+preplace netloc vsync_0_1 1 0 4 NJ 1130 NJ 1130 NJ 1130 890
+preplace netloc xlconstant_0_dout 1 4 2 1330 570 1750
+preplace netloc xlconstant_0_dout1 1 5 1 1780J 640n
+preplace netloc rst_pclk_peripheral_aresetn 1 4 1 N 940
+preplace netloc axi_vdma_0_M_AXIS_MM2S 1 5 1 1770 350n
+preplace netloc axi_vdma_0_M_AXI_MM2S 1 5 1 1750 60n
+preplace netloc axi_vdma_0_M_AXI_S2MM 1 5 1 1770 80n
+preplace netloc ov7670_axi_stream_ca_0_m_axis 1 4 1 1280 320n
+preplace netloc processing_system7_0_DDR 1 7 1 NJ 240
+preplace netloc processing_system7_0_FIXED_IO 1 7 1 NJ 260
+preplace netloc processing_system7_0_M_AXI_GP0 1 3 5 900 180 NJ 180 NJ 180 NJ 180 2560
+preplace netloc rgb2dvi_0_TMDS 1 7 1 NJ 730
+preplace netloc smartconnect_0_M00_AXI 1 6 1 2120 90n
+preplace netloc smartconnect_1_M00_AXI 1 4 1 1280 270n
+preplace netloc v_axi4s_vid_out_0_vid_io_out 1 6 1 2110 530n
+preplace netloc v_tc_0_vtiming_out 1 5 1 1770 560n
+levelinfo -pg 1 -20 210 520 770 1080 1560 1940 2340 2590
+pagesize -pg 1 -db -bbox -sgen -130 -20 2720 1370
+"
+}
+{
+   "da_axi4_cnt":"5",
+   "da_board_cnt":"9",
+   "da_clkrst_cnt":"5",
+   "da_ps7_cnt":"3"
+}
